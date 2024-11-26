@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+section.bg-dark {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+section.bg-dark h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section.bg-dark p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+section.bg-dark .btn-primary {
+    background: #4ca1af;
+    border: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+section.bg-dark .btn-primary:hover {
+    background: #2c3e50;
+    transform: scale(1.1);
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#skills .bi {
+    font-size: 3rem;
+    color: #007BFF;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#skills .bi:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+#skills h5 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#projects .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#projects .card img {
+    border-radius: 10px 10px 0 0;
+}
+
+#projects .card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#projects .btn-primary {
+    background: #007BFF;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+#projects .btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#contact .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#contact button {
+    background: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contact button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #007BFF;
+    transform: scale(1.2);
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    section.bg-dark h1 {
+        font-size: 2.5rem;
+    }
+
+    #skills .bi {
+        font-size: 2.5rem;
+    }
+
+    #about img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Fancy Header (Optional Section) */
+.fancy-header {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
